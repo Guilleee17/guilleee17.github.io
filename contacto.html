@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="css general.css">
+    <title>¡Contactanos!</title>
+</head>
+<body>
+  <nav id="nav">
+    <button class="nav-icon" id="nav-icon"><span></span></button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lugares.html">Lugares</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="saber-mas.html">Saber más</a></li>
+    </ul>
+  </nav>
+    <br><br><br><br><br><br>
+<h1>Rellena los siguientes datos:</h1>
+    <form class="formulario" action="enviar.php" method="post">
+        <p>Nombre:</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <p>Apellidos:</p>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellidos" required>
+      <br><br>
+      <p>Email:</p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      <br><br>
+      <p>Mensaje:</p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea style="width:400px; height:400px;" id="mensaje" name="mensaje" required>Escriba aqui su mensaje</textarea>
+      <br>
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
